@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<meta name="author" content="IT" />
+	<script src="jquery.js"></script>
+     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<title>Voting App</title>
+</head>
+<style type="text/css">
+    .main_menu>ul>li{
+        list-style:none;
+        float:left;
+        text-decoration:none;
+        color:black;
+    }
+
+	.container-voting{
+		margin-bottom: 20px;
+	}
+	.than{
+		padding-top: 30px;
+	}
+	.tieu_de{
+	    background:#DDDDDD;
+	}
+	.footer{
+	    font-size:15px;
+	    color:red;
+	}
+</style>
+<body>
+<div class="wrapper col-md-offset-1 col-md-10">
+    <div class="tieu_de">
+    	<div class="header clearfix main_menu">
+        		<ul class="nav nav-bills" id="">
+        		    <li role="presentation" class="col-md-9"><a href="/">Voting App</a></li>
+        			<li role="presentation" class=""><a href="/">Dashboard</a></li>
+        			<li role="presentation" class=""><a href="/login">log out</a></li>
+        		</ul>
+	    </div>
+	</div>
+		<div class="than col-md-6 col-md-offset-3">
+		<div class=" container-voting">
+		    <h2 class="page-header">Create a new poll</h2>
+			<form method="post" action="/createpoll">
+			    <div class="form-group">
+			        <label>Name</label>
+			        <input type="text" name="name" class="form-control" placeholder="Name" >
+			    </div>
+			    <h2 class="">Option</h2>
+			    <div class="form-group">
+			        <input type="text" name="option1" class="form-control" placeholder="">
+			    </div>
+			    <div class="form-group">
+			        <input type="text" name="option2" class="form-control" placeholder="">
+			    </div>
+			    
+			   	<button type="submit" class="btn btn-info">Submit</button>
+			   	
+			</form>
+		</div>
+	  <footer class="text-center footer navbar-fixed-bottom">
+            <p>Voting App by thangbk2209</p>
+      </footer>
+	</div>
+</div>
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

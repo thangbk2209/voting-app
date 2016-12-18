@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<meta name="author" content="IT" />
+	<!--<script src="jquery.js"></script>-->
+     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+	<title>Voting App</title>
+</head>
+<style type="text/css">
+    .main_menu>ul>li{
+        list-style:none;
+        float:left;
+        text-decoration:none;
+        color:black;
+    }
+
+	.container-voting{
+		margin-bottom: 20px;
+	}
+	.than{
+		padding-top: 30px;
+	}
+	.tieu_de{
+	    background:#DDDDDD;
+	}
+	.footer{
+	    font-size:15px;
+	    color:red;
+	}.vote{
+		float:left;
+	}
+	.thanh1{
+	    width:30%;
+	    padding-left:500px;
+	    background-color:#3399FF;
+	    margin-top:10px;
+	}
+	.thanh2{
+		background-color:#33CC33;
+		padding-left:500px;
+		margin-top:10px;
+		width:30%;
+	}
+	.vote>div{
+		float:left;
+	}
+
+</style>
+<body>
+<div class="wrapper col-md-offset-1 col-md-10">
+    <div class="tieu_de">
+    	<div class="header clearfix main_menu">
+        		<ul class="nav nav-bills" id="">
+        		    <li role="presentation" class="col-md-9"><a href="/">Voting App</a></li>
+        			<li role="presentation" class=""><a href="/">Dashboard</a></li>
+        			<!--<li role="presentation" class=""><a href="/register">AAAAAAAAAAAA</a></li>-->
+        			<li role="presentation" class=""><a href="/login">log out</a></li>
+        		</ul>
+	    </div>
+	</div>
+	<div class="than voting">
+		<div class="text-center container-voting">
+			
+			<div class="option col-md-6 col-md-offset-2 text-center">
+				<span>
+					<h3>Vote <%= poll[0].name %><!!!</h3>
+				</span>
+					<h3>You vote for: <%= myVote%> </h3>
+					<%= console.log(poll[0]) %>
+					<div class="row">
+							<button class="op1 text-center btn btn-info" value="<%= poll[0].option1%>"><%= poll[0].option1 %></button>
+							<button class="op2 text-center btn btn-success" value="<%= poll[0].option2 %>"><%= poll[0].option2 %></button>
+					</div>
+							<div class="vote">
+								<div class="thanh1"><%= poll[0].vote1 %></div>
+								<div class="thanh2"><%= poll[0].vote2 %></div>
+							</div>
+          </div>
+			</div>
+	  <footer class="text-center footer navbar-fixed-bottom">
+            <p>Voting App by thangbk2209</p>
+      </footer>
+	</div>
+</div>
+	<script type="text/javascript">
+	</script>
+</body>
+</html>
